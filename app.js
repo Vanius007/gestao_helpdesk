@@ -42,6 +42,15 @@ app.get("/usuarios", function(req, res){
       modelos.Usuario.findAll().then(function(usuarios){
       return res.status(200).json(usuarios);
 
+  });
+
+ });
+
+app.get("/grupos", function(req, res){
+
+      modelos.Grupo.findAll().then(function(grupos){
+      return res.status(200).json(grupos);
+
 	});
 
     
